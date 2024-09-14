@@ -1,0 +1,62 @@
+/*ESTO AYUDA A MODIFICAR PAGINA CHICA*/
+.display-mini{
+    display: inherit !important;
+}
+
+#wrapper, #newsletter, #main-section, .container{
+    font-size: 9px;
+    text-align: center;
+}
+
+/*INICIO, QUIENES SOMOS Y SERVICIOS*/
+header{
+    padding: 5px;
+    font-size: 5px;
+}
+
+#main-select{
+    font-size: 7px;
+}
+
+footer{
+    font-size: 8px;
+    text-align: center;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*TAMAÑO DEL DESPLEGABLE SOLO DISPONIBLE EN PAGINA CHICA*/
+select.display-mini{
+    font-size: 1.2em;
+    width: 100%;
+}
+
+/*TAMAÑO LOGOTIPO PROTAX*/
+.logoprotax{
+    height: 20px;
+    width: 80px;
+}
+
+/*TAMAÑO PRODUCTOS*/
+.productos{
+    height: 40px;
+    width: 70px;
+}
+
+/*TAMAÑO PARA ENLACES (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter{
+    font-size: 0.6em;
+}
+
+/*ESPACIADO PARA (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter li{
+	padding: 10px;
+}

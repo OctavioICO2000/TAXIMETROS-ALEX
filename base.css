@@ -1,0 +1,57 @@
+/*ESTO OCULTA OBJETOS DEPENDIENDO DEL TAMAÑO DE LA PANTALLA*/
+.display-great{
+    display: none;
+}
+
+.display-medium{
+    display: none;
+}
+
+.display-mini{
+    display: none;
+}
+
+/*ESTO ELIMINA ESPACIADO IZQUIERDO DE TODA LA PANTALLA*/
+body{
+    font-family: sans-serif;
+    margin:0;
+}
+
+/*ESTO QUITA ESTILO SUBRAYADO*/
+a{
+	text-decoration: none;
+}
+
+/*ELIMINA ESPACIADOS*/
+header, footer, #newsletter, #main-nav, #main-section, 
+.container, #main-select{
+    padding-top: 1px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 30px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600; /*SOMBREADO*/
+    padding-right: 30px; /*ESPACIADO*/
+}
+
+/*ESTO QUITA ESTILO VIÑETAS*/
+li{
+	display: inline;
+}
+

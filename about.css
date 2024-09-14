@@ -1,0 +1,226 @@
+
+/*ESTO DA FORMATO DE MARCO AL SLIDER*/
+.slide{
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+/*ESTO MANTIENE ACTIVA LA IMAGEN DEL SLIDER*/
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+/*ESTO OCULTA LAS DEMAS IMAGENES Y SOLO MUESTRA UNA A LA VEZ*/
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 85%; /*MAS ES POSICION ABAJO MENOS ES POSICION ARRIBA*/
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 50px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 33%; /*ESTO MUEVE LA FLECHA HACIA IZQUIERDA O DERECHA*/
+}
+.slide-control.next {
+    right: 33%; /*ESTO MUEVE LA FLECHA HACIA IZQUIERDA O DERECHA*/
+}
+
+/*ESTO MANTIENE ACTIVAS LAS FLECHITAS*/
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+
+/*ESTO LE DA FORMATO A LOS PUNTITOS INFERIORES DEL SLIDER*/
+.slide-indicador {
+    list-style: none;
+    margin: 1%; /*ESTO MANTIENE ESPACIADO INFERIOR*/
+    padding: 0;
+    position: relative; /*ESTO MANDA AL INFERIOR A LOS PUNTITOS DEL SLIDER*/
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+/*ESTO MANTIENE EN HORIZONTAL LOS PUNTITOS INFERIORES DEL SLIDER*/
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 10px; /*ESTO MUEVE LOS PUNTOS DE INDICE ABAJO DE LA IMAGEN*/
+}
+
+/*ESTO DA FORMATO A LOS PUNTITOS INFERIORES DEL SLIDER*/
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 40px;
+}
+
+/*ESTO DA FORMATO A LOS PUNTITOS INFERIORES DEL SLIDER*/
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+.slide-item img{
+    height: calc( 200px + 3em); /*ESTO DA FORMATO AL SLIDER*/
+}
+
+/*SLIDER AUTOMATICO*/
+
+/*MODIFICAR TAMAÑO DE LAS IMAGENES*/
+.imagenes{
+    height: 500px;
+    width: 100%;
+}
+/*ESTO MODIFICA POSICION DE LAS IMAGENES*/
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+
+    height: 500px; /*MODIFICAR SI SE AGREGAN IMAGENES*/
+    width: 300%; /*MODIFICAR SI SE AGREGAN IMAGENES*/
+}
+
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden; /*ESTO MUESTRA UNA IMAGEN A LA VEZ*/
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+
+    30% {
+        margin-left: 0;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    95% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}

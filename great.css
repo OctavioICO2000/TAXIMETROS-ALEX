@@ -1,0 +1,125 @@
+/*ESTO AYUDA A MODIFICAR PAGINA GRANDE*/
+.display-great{
+    display: inherit !important;
+}
+
+/*ALINEACION CENTRADA A TODO EL DOCUMENTO*/
+body{
+    text-align: center;
+}
+
+/*ALINEACION AL CUERPO DEL DOCUMENTO*/
+header, footer, #wrapper, #newsletter, #main-select, 
+#main-section, .container, .nosotros, 
+.contacto, .mision, .servicios, .ubicacion, .producto,
+.quienes-somos, .servicio, .container-services, 
+#carrusel-contenido{
+    margin-left: auto; /*ALINEACION CORRECTA*/
+    margin-right: auto; /*ALINEACION CORRECTA*/
+    clear: both;
+    width: 100%;
+    max-width: 1500px; /*ESTILO CENTRADO ALINEADO IZQUIERDA*/
+}
+
+.nosotros, .mision, .ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.nosotros{
+    background: url(01_nosotros.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.nosotros, .mision, .ubicacion{
+    height: 80vh !important;
+}
+
+.contacto, .servicios{
+    height: 70vh !important;
+}
+
+.mision{
+    background: url(02_mision.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.ubicacion{
+    background: url(03_ubicacion.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+/*CUADROS QUE DICEN SABER MAS*/
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;/*MOD. ALTO Y ANCHO*/
+    text-decoration: none;
+}
+
+.boton:hover{
+    background: none;
+}
+
+.boton-inicio{
+    display: flex;
+}
+
+.boton-inicio a{
+    margin: 0 10px;
+}
+
+/*FORMATO CORRECTO A LOS CONTENIDOS*/
+.contenido{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FORMATO A ENCABEZADOS*/
+.titulo{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*FORMATO A PARRAFOS DE LOS CONTENIDOS*/
+.contenido p{
+    margin-bottom: 40px;
+    font-size: 30px;
+    padding: 0 40px;
+}
+
+/*TAMAÑO LOGOTIPO PROTAX*/
+.logoprotax{
+    height: 50px;
+    width: 125px;
+}
+
+/*TAMAÑO PRODUCTOS*/
+.productos{
+    height: 100px;
+    width: 130px;
+}
+
+/*TAMAÑO PARA ENLACES (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter{
+    font-size: 1.0em;
+}
+
+ /*ESPACIADO PARA (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter li{
+	padding: 15px;
+}
+

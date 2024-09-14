@@ -1,0 +1,56 @@
+/*MODIFICAR TAMAÑO DE LAS IMAGENES*/
+.slider-wrapper{
+    position: relative; /*A MODIFICAR*/
+    max-width: 100%; /*MAS GRANDE O MAS CHICO EL SLIDER*/
+    margin: 0 auto; /*ESTO LA MANTIENE CENTRADA*/
+}
+
+/*FORMATO HORIZONTAL A LAS IMAGENES*/
+.slider{
+    display: flex; /*FORMATO DE SLIDER*/
+    aspect-ratio: 16 / 9; /*FORMATO DE LAS IMAGENES*/
+    overflow-x: hidden; /*OCULTA LAS DEMAS IMAGENES*/
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: .5rem;
+}
+
+/*AJUSTE DE IMAGENES DEL SLIDER*/
+.slider img{
+    flex: 1 0 100%; /*VISUALIZACIÓN CORRECTA DE IMAGEN ACTIVA*/
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+/*FORMATO BOTONES DEL SLIDER*/
+.slider-nav{
+    display: flex; /*POSICIÓN INFERIOR*/
+    column-gap: 3.5rem; /*ESPACIO HORIZONTAL*/
+    position: absolute; /*POSICIÓN INFERIOR*/
+    bottom: -0.5rem; /*ESPACIO INFERIOR*/
+    left: 50%; /*FORMATO CENTRADO*/
+    transform: translateX(-50%); /*FORMATO CENTRADO*/
+    z-index: 1;
+}
+
+/*FORMATO ENCABEZADO DEL SLIDER*/
+#menu-slider h2{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/*FORMATO ENLACES DEL SLIDER*/
+/*POSIBLE A ELIMINAR*/
+.slider-nav a{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: black;
+    transition: opasity ease 250ms;
+    text-decoration: none; /*ESTO ELIMINA EL FORMATO DE ENLACE*/
+}
+
+/*POSIBLE A ELIMINAR*/
+.slider-nav a:hover{
+    opacity: 1;
+}

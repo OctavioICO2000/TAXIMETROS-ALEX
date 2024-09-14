@@ -1,0 +1,55 @@
+/*ESTO AYUDA A MODIFICAR PAGINA MEDIANA*/
+.display-medium{
+    display: inherit !important;
+}
+
+/*ALINEACION CENTRADA PARA TODO EL DOCUMENTO*/
+body{
+    text-align: center;
+}
+
+header, footer, #wrapper, #newsletter, #main-section{
+    font-size: 10px;
+}
+
+/*INICIO, QUIENES SOMOS Y SERVICIOS*/
+header{
+    padding: 5px;
+}
+
+/*NOMBRE DE LA EMPRESA EN ENCABEZADO*/
+.logo{
+    font-size: 5px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*TAMAÑO LOGOTIPO PROTAX*/
+.logoprotax{
+    height: 40px;
+    width: 115px;
+}
+
+/*TAMAÑO PRODUCTOS*/
+.productos{
+    height: 80px;
+    width: 110px;
+}
+
+/*TAMAÑO PARA ENLACES (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter{
+    font-size: 0.8em;
+}
+
+/*ESPACIADO PARA (INICIO, QUIENES SOMOS Y SERVICIOS)*/
+#newsletter li{
+	padding: 20px;
+}

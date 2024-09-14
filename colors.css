@@ -1,0 +1,55 @@
+/*COLOR DE FONDO DE LETRAS PARA (INCIO, QUIENES SOMOS Y COMPAÑIA), 
+EL HEADER Y FOOTER*/
+header, #newsletter, footer, .container{
+    background-color: black;
+    border-bottom: yellow 5px solid;
+}
+
+/*COLOR DE LETRAS PARA (INCIO, QUIENES SOMOS Y COMPAÑIA) Y EL HEADER*/
+a, header, #main-nav, #main-section, footer, 
+.container, .contacto, .servicios, .producto, 
+.quienes-somos, .servicio{
+    color:#ffffff;
+}
+
+/*SOMBREADO PARA (INCIO, QUIENES SOMOS Y COMPAÑIA)*/
+#newsletter a:hover, header a:hover, .boton:hover{
+    color: #d74894;
+}
+
+/*COLORES PARA EL MENU SECUNDARIO*/
+#main-nav, #main-section{
+    background-color: #3f3f3f;
+    border-bottom: yellow 5px solid;
+}
+
+.contacto, .servicios, .producto, .quienes-somos,
+.servicio{
+    background: black;
+}
+
+.boton{
+    border: 2px solid black;
+    background: #3f3f3f;
+}
+
+/*COLORES PARA EL SLIDER*/
+/*COLOR PARA LOS DIVS*/
+.container-services{
+    background-color: lightgray;
+    color: black;
+}
+
+.slider{
+    box-shadow: 0 .25rem .5rem #21212126; /*BORDE EXTERIOR*/
+}
+
+#menu-slider h2, #menu-slider li{
+    color: black;
+}
+
+/*SOMBREADO*/
+#menu a:hover, #menu-slider h2:hover{
+    color: yellow;
+    border-bottom: 2px solid black;
+}
